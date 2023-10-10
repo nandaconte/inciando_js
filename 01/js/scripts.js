@@ -1,0 +1,1 @@
+console.log("Testanto js agora com script externo")
