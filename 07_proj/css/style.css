@@ -19,6 +19,7 @@
     --big-font: 3.2rem;
     --medium-font: 1.8rem;
     --p-font: 0.941rem;
+    --color-2:#22cf91;
 }
  
 section {
@@ -28,6 +29,32 @@ section {
 body.active{
     --text-color: #fff;
     --bg-color:#0f0c27;
+}
+body.active .light-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: #22cf91;
+    border-radius: 0.5rem;
+}
+body.active .percent-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    background: var(--hover);
+    border-radius: 0.5rem;
+}
+
+body.active .services-box .bx{
+    padding-top: 2rem;
+    font-size: 54px;
+    color:#22cf91
+}
+body.active .services-box a{
+    color:#22cf91;
 }
 body{
     background: var(--bg-color);
@@ -202,7 +229,7 @@ header.shadow{
     font-weight: 400;
     margin-left: 1rem;
 }
- 
+
 .skills-container {
    
     display: grid;
@@ -239,7 +266,6 @@ header.shadow{
     background: hsla(260, 100%, 44%, 0.4);
     border-radius: 0.5rem;
 }
- 
 .percent-bar{
     position: absolute;
     bottom: 0;
@@ -248,7 +274,7 @@ header.shadow{
     background: var(--main-color);
     border-radius: 0.5rem;
 }
- 
+
 .html-bar{
     width: 94%;
 }
@@ -406,6 +432,16 @@ form textarea{
 
     .section {
         padding: 50px 4%;
+    }
+    .services-content{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .services .services-box i {
+        color:#22cf91;
+    }
+    .services a{
+        color:#22cf91;
     }
 
 }
